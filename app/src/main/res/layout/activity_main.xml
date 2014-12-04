@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="android.support.v4.app.DialogFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/date_picker_layout"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/calendar_icon"
+            android:layout_width="26dp"
+            android:layout_alignParentLeft="true"
+            android:src="#000000"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_height="26dp" />
+
+        <Button
+            android:id="@+id/edit_date1"
+            android:layout_width="26dp"
+            android:layout_toRightOf="@+id/calendar_icon"
+            android:background="@drawable/edit_icon_dark"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/edit_date1"
+            android:id="@+id/date1"
+            android:text="date1"
+            android:layout_margin="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@id/date1"
+            android:text="-"
+            android:id="@+id/dash"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/edit_date2"
+            android:layout_width="26dp"
+            android:layout_toRightOf="@+id/dash"
+            android:background="@drawable/edit_icon_dark"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_height="26dp" />
+
+
+        <TextView
+            android:layout_toRightOf="@id/edit_date2"
+            android:text="date2"
+            android:id="@+id/date2"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totallayout"
+        android:layout_width="match_parent"
+        android:background="#b9296cc4"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Total Spend:"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/total_spent_amount"
+                android:text="Rs. 14827"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/edit_max_amount"
+            android:layout_width="48dp"
+            android:background="@drawable/edit_icon_white"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@id/date_picker_layout"
+        android:name="android.support.v4.app.DialogFragment"
+        android:layout_above="@id/totallayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>
