@@ -13,6 +13,9 @@ import java.util.regex.Pattern;
  */
 public class SortingHat {
 
+
+    // Working on converting these into a proper regex format. See SmsTemplates.class.
+
     private static final String icici_debit_merchant = "You have made a Debit Card purchase of";
     private static final String icici_debit_atm = "is debited with";
 

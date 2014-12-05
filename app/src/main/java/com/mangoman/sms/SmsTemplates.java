@@ -16,6 +16,8 @@ public class SmsTemplates {
     private static final String icici_atm = "((Your Ac [\\w]* is debited with INR)|( (\\w+)\\*CASH WDL\\*[\\w\\W]*. Avbl Bal [\\w,.]* To bank on phone with iMobile, click [\\w.\\/]*))";
     private static final String icici_credit = "";
 
+    // TO-DO : convert the following templates into the regex format
+
     private static final String hdfc_debit_merchant = "Thank you for using your HDFC bank DEBIT/ATM card ending ";
     private static final String hdfc_debit_atm = "((Thank you for using your HDFC Bank DEBIT/ATM Card ending (\\d+) for Rs.[\\s])|([\\s]towards ATM WDL in [\\w]* at (.+)))";
     private static final String hdfc_credit_merchant = "was spent on ur HDFCBank CREDIT Card ending";
